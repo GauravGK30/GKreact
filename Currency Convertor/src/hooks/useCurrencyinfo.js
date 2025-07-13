@@ -8,7 +8,7 @@ function useCurrencyInfo(currency){
 
         const sanitizedCurrency = currency.toUpperCase().trim();
        
-        fetch(`https://v6.exchangerate-api.com/v6/4163748f3b1bcce7f650d2f9/latest/${sanitizedCurrency}`)
+        fetch(`https://v6.exchangerate-api.com/v6/.../latest/${sanitizedCurrency}`)
         .then((res) => {
         if (!res.ok) throw new Error(`API returned status ${res.status}`);
         return res.json();
