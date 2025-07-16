@@ -34,3 +34,10 @@ src/
 ├── App.jsx # Main App component
 ├── App.css # Tailwind base styles
 └── index.js # Entry point
+
+
+---
+ScreenShot
+<img width="1062" height="468" alt="Screenshot 2025-07-16 222255" src="https://github.com/user-attachments/assets/ba9939f5-6010-4a00-869e-9d8fe64a5a42" />
+
+
