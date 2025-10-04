@@ -27,16 +27,22 @@ I built this as a backend-focused solution emphasizing robust business logic and
 I organized the code following MVC pattern to keep things clean and maintainable:
 
 warehouse-api/
+│
 ├── controllers/
 │   └── productController.js
+│
 ├── models/
 │   └── productModel.js
+│
 ├── routes/
 │   └── productRoutes.js
+│
 ├── db/
 │   └── db.js
+│
 ├── tests/
 │   └── products.test.js
+│
 ├── app.js
 ├── server.js
 ├── .env
