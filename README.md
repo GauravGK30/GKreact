@@ -151,8 +151,8 @@ Create a .env file in the root directory. I've included a .env.example as a temp
 .env.example 
 .env
 ```
-```env
-PORT=5000
+``env``
+```PORT=5000
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=your_mysql_password
