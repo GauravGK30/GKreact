@@ -26,27 +26,20 @@ I built this as a backend-focused solution emphasizing robust business logic and
 
 I organized the code following MVC pattern to keep things clean and maintainable:
 
-warehouse-api/
-│
-├── controllers/
-│   └── productController.js
-│
-├── models/
-│   └── productModel.js
-│
-├── routes/
-│   └── productRoutes.js
-│
-├── db/
-│   └── db.js
-│
-├── tests/
-│   └── products.test.js
-│
-├── app.js
-├── server.js
-├── .env
-└── package.json
+- **controllers/** - Business logic and request handlers
+  - productController.js
+- **models/** - Database operations
+  - productModel.js
+- **routes/** - API endpoint definitions
+  - productRoutes.js
+- **db/** - Database configuration
+  - db.js
+- **tests/** - Test files
+  - products.test.js
+- **app.js** - Express app configuration
+- **server.js** - Server entry point
+- **.env** - Environment variables
+- **package.json** - Project dependencies
 
 ## 🎯 API Endpoints
 
