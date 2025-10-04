@@ -77,8 +77,88 @@ Make sure you have these installed:
 - MySQL (v8 or higher)
 - npm or yarn
 
+I understand - the formatting changes after the clone step. Here's the complete README in one continuous format that will maintain proper flow:
+markdown# 🏭 Warehouse Inventory Management API
+
+A RESTful API built with Node.js and Express to manage products and inventory in a warehouse. This project implements full CRUD operations, stock management with validation, and tracks all inventory changes.
+
+## Overview
+
+This API allows you to:
+
+- Create, read, update, and delete products
+- Manage inventory levels with increase/decrease operations
+- Prevent negative stock through validation
+- Track low-stock products automatically
+- View complete stock change history for audit purposes
+
+I built this as a backend-focused solution emphasizing robust business logic and proper error handling.
+
+## Tech Stack
+
+- **Runtime:** Node.js
+- **Framework:** Express.js
+- **Database:** MySQL
+- **Testing:** Jest + Supertest
+- **ORM/Query:** MySQL2
+
+## 📂 Project Structure
+
+I organized the code following MVC pattern to keep things clean and maintainable:
+warehouse-api/
+├── controllers/
+│   └── productController.js
+├── models/
+│   └── productModel.js
+├── routes/
+│   └── productRoutes.js
+├── db/
+│   └── db.js
+├── tests/
+│   └── products.test.js
+├── app.js
+├── server.js
+├── .env
+└── package.json
+
+## 🎯 API Endpoints
+
+### Product Management (CRUD)
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/products` | Get all products |
+| GET | `/api/products/:id` | Get single product |
+| POST | `/api/products` | Create new product |
+| PUT | `/api/products/:id` | Update product |
+| DELETE | `/api/products/:id` | Delete product |
+
+### Inventory Operations
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/api/products/:id/increase` | Increase stock quantity |
+| POST | `/api/products/:id/decrease` | Decrease stock (validates availability) |
+
+### Bonus Features
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/products/low-stock` | Get products below threshold |
+| GET | `/api/products/:id/history` | Get stock change history |
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have these installed:
+
+- Node.js (v14 or higher)
+- MySQL (v8 or higher)
+- npm or yarn
+
 ### 1. Clone the Repository
-```bash
+bash
 git clone https://github.com/GauravGK30/Warehouse-API.git
 cd warehouse-api
 2. Install Dependencies
@@ -259,3 +339,5 @@ Make sure:
 Database is running and accessible
 Test data doesn't conflict with existing data
 All dependencies are installed: npm install
+
+ion Issues
